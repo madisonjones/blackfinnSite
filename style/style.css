@@ -2,36 +2,6 @@ body, html {
     height: 100vh;
 }
 
-.bgParties {
-    /* The image used */
-    background-image: url("background.jpg");
-
-    /* Full height */
-    height: 160vh; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-    opacity: 0;
-}
-
-.bgEvents {
-	    /* The image used */
-	    background-image: url("background.jpg");
-
-	    /* Full height */
-	    height: 120vh; 
-
-	    /* Center and scale the image nicely */
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    opacity: 0;
-}
-
-
 .bg { 
     /* The image used */
     background-image: url("background.jpg");
@@ -49,33 +19,6 @@ body, html {
 	opacity: 0
 }
 
-.bgHome {
-	    /* The image used */
-	    background-image: url("background.jpg");
-
-	    /* Full height */
-	    height: 100vh; 
-
-	    /* Center and scale the image nicely */
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-		opacity: 0;
-}
-
-.bgGallery {
-	    /* The image used */
-	    background-image: url("background.jpg");
-
-	    /* Full height */
-	    height: 185%; 
-
-	    /* Center and scale the image nicely */
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-		opacity: 0;
-}
 
 #imageModal {
 	position: fixed;

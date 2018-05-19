@@ -32,9 +32,19 @@ body, html {
 
 .modalImage {
 	position: fixed;
-	left: 20vw;
-	top: 10vh;
+	left: 0;
+	top: 20vh;
 	z-index: 200;
+	width: 100vw;
+	height: auto;
+}
+
+@media screen and (min-width: 775px) {
+    .modalImage {
+        top: 5vh;
+        width: 60vw;
+        left: 20vw;
+    }
 }
 
 #homePage {

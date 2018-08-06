@@ -355,6 +355,7 @@ hr {
   left: 0;
   top: 0;
   width: 700%;
+  height: 100%;
   animation: slideshow 50s linear infinite;
 }
 @keyframes slideshow {

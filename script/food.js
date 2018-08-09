@@ -5,9 +5,19 @@ $(document).ready(function(){
 
 		$("#starterHead").click(function(){
 			$("#starterHead").toggleClass("activeHead")
-			$("#saladHead, #handheldHead, #entreeHead, #sideHead").removeClass("activeHead") 
+			$("#lunchHead, #saladHead, #handheldHead, #entreeHead, #sideHead, #dessertHead").removeClass("activeHead") 
 			$("#starterSection").slideToggle(700)
-			$("#saladSection, #handheldSection, #entreeSection, #sideSection").hide()
+			$("#lunchSection, #saladSection, #handheldSection, #entreeSection, #sideSection, #dessertSection").hide()
+			$("html, body").animate({
+			    scrollTop: $("#starterHead").offset().top
+			}, 500);
+		});
+
+		$("#lunchHead").click(function(){
+			$("#lunchHead").toggleClass("activeHead")
+			$("#saladHead, #starterHead, #handheldHead, #entreeHead, #sideHead, #dessertHead").removeClass("activeHead") 
+			$("#lunchSection").slideToggle(700)
+			$("#saladSection, #starterSection, #handheldSection, #entreeSection, #sideSection, #dessertSection").hide()
 			$("html, body").animate({
 			    scrollTop: $("#starterHead").offset().top
 			}, 500);
@@ -15,9 +25,9 @@ $(document).ready(function(){
 
 		$("#saladHead").click(function(){
 			$("#saladSection").slideToggle(700)
-			$("#starterSection, #handheldSection, #entreeSection, #sideSection").hide(500)
+			$("#starterSection, #lunchSection,  #handheldSection, #entreeSection, #sideSection, #dessertSection").hide(500)
 			$("#saladHead").toggleClass("activeHead")
-			$("#starterHead, #handheldHead, #entreeHead, #sideHead").removeClass("activeHead")
+			$("#starterHead, #lunchHead, #handheldHead, #entreeHead, #sideHead, #dessertHead").removeClass("activeHead")
 			$("html, body").animate({
 			    scrollTop: $("#starterHead").offset().top
 			}, 500);
@@ -25,9 +35,9 @@ $(document).ready(function(){
 
 		$("#handheldHead").click(function(){
 			$("#handheldSection").slideToggle(700)
-			$("#starterSection, #saladSection, #entreeSection, #sideSection").hide(500)
+			$("#starterSection, #lunchSection, #saladSection, #entreeSection, #sideSection, #dessertSection").hide(500)
 			$("#handheldHead").toggleClass("activeHead")
-			$("#saladHead, #starterHead, #entreeHead, #sideHead").removeClass("activeHead")
+			$("#lunchHead, #saladHead, #starterHead, #entreeHead, #sideHead, #dessertHead").removeClass("activeHead")
 			$("html, body").animate({
 			    scrollTop: $("#starterHead").offset().top
 			}, 500);
@@ -35,9 +45,9 @@ $(document).ready(function(){
 
 		$("#entreeHead").click(function(){			
 			$("#entreeSection").slideToggle(700)
-			$("#starterSection, #saladSection, #handheldSection, #sideSection").hide(500)
+			$("#starterSection, #lunchSection, #saladSection, #handheldSection, #sideSection, #dessertSection").hide(500)
 			$("#entreeHead").toggleClass("activeHead")
-			$("#saladHead, #handheldHead, #starterHead, #sideHead").removeClass("activeHead")
+			$("#lunchHead, #saladHead, #handheldHead, #starterHead, #sideHead, #dessertHead").removeClass("activeHead")
 			$("html, body").animate({
 			    scrollTop: $("#starterHead").offset().top
 			}, 500);
@@ -45,9 +55,19 @@ $(document).ready(function(){
 
 		$("#sideHead").click(function(){			
 			$("#sideSection").slideToggle(700)
-			$("#starterSection, #saladSection, #handheldSection, #entreeSection").hide(500)
+			$("#starterSection, #lunchSection, #saladSection, #handheldSection, #entreeSection, #dessertSection").hide(500)
 			$("#sideHead").toggleClass("activeHead")
-			$("#saladHead, #handheldHead, #entreeHead, #starterHead").removeClass("activeHead") 
+			$("#lunchHead, #saladHead, #handheldHead, #entreeHead, #starterHead, #dessertHead").removeClass("activeHead") 
+			$("html, body").animate({
+			    scrollTop: $("#starterHead").offset().top
+			}, 500);
+		});
+
+		$("#dessertHead").click(function(){			
+			$("#dessertSection").slideToggle(700)
+			$("#starterSection, #lunchSection, #saladSection, #handheldSection, #entreeSection, #sideSection").hide(500)
+			$("#dessertHead").toggleClass("activeHead")
+			$("#lunchHead, #saladHead, #handheldHead, #entreeHead, #starterHead, #sideHead").removeClass("activeHead") 
 			$("html, body").animate({
 			    scrollTop: $("#starterHead").offset().top
 			}, 500);

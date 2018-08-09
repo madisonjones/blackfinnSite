@@ -2,15 +2,23 @@ $(document).ready(function(){
 	console.log("connected");
 		$(".bg").delay(500).animate({opacity: 1}, 1500);
 
-
+		$("#specialsHead").click(function(){
+			$("#specialsSection").slideToggle(700)
+			$("#wineSection, #beerSection, #cocktailSection, #draftsContainer, #bottlesContainer").hide(500)
+			$("#specialsHead").toggleClass("activeHead")
+			$("#wineHead, #beerHead, #cocktailHead, #whitesHead, #redsHead, #draftsHead, #bottlesHead").removeClass("activeHead") 
+			$("html, body").animate({
+			    scrollTop: $("#specialsHead").offset().top
+			}, 500);
+		});
 
 		$("#beerHead").click(function(){
 			$("#beerSection").slideToggle(700)
-			$("#wineSection, #cocktailSection, #draftsContainer, #bottlesContainer").hide(500)
+			$("#specialsSection, #wineSection, #cocktailSection, #draftsContainer, #bottlesContainer").hide(500)
 			$("#beerHead").toggleClass("activeHead")
-			$("#wineHead, #cocktailHead, #whitesHead, #redsHead, #draftsHead, #bottlesHead").removeClass("activeHead") 
+			$("#specialsHead, #wineHead, #cocktailHead, #whitesHead, #redsHead, #draftsHead, #bottlesHead").removeClass("activeHead") 
 			$("html, body").animate({
-			    scrollTop: $("#beerHead").offset().top
+			    scrollTop: $("#specialsHead").offset().top
 			}, 500);
 		});
 
@@ -20,7 +28,7 @@ $(document).ready(function(){
 			$("#draftsHead").toggleClass("activeHead")
 			$("#bottlesHead").removeClass("activeHead") 
 			$("html, body").animate({
-			    scrollTop: $("#beerHead").offset().top
+			    scrollTop: $("#specialsHead").offset().top
 			}, 500);
 		})
 
@@ -30,18 +38,18 @@ $(document).ready(function(){
 			$("#bottlesHead").toggleClass("activeHead")
 			$("#draftsHead").removeClass("activeHead") 
 			$("html, body").animate({
-			    scrollTop: $("#beerHead").offset().top
+			    scrollTop: $("#specialsHead").offset().top
 			}, 500);
 
 		})
 
 		$("#wineHead").click(function(){
 			$("#wineSection").slideToggle()
-			$("#cocktailSection, #beerSection, #whitesContainer, #redsContainer").hide(500)
+			$("#specialsSection, #cocktailSection, #beerSection, #whitesContainer, #redsContainer").hide(500)
 			$("#wineHead").toggleClass("activeHead")
-			$("#beerHead, #cocktailHead, #whitesHead, #redsHead, #draftsHead, #bottlesHead").removeClass("activeHead") 
+			$("#specialsHead, #beerHead, #cocktailHead, #whitesHead, #redsHead, #draftsHead, #bottlesHead").removeClass("activeHead") 
 			$("html, body").animate({
-				scrollTop: $("#beerHead").offset().top
+				scrollTop: $("#specialsHead").offset().top
 				}, 500);
 		});
 
@@ -52,7 +60,7 @@ $(document).ready(function(){
 			$("#whitesHead").toggleClass("activeHead")
 			$("#redsHead").removeClass("activeHead") 
 			$("html, body").animate({
-			    scrollTop: $("#wineHead").offset().top
+			    scrollTop: $("#specialsHead").offset().top
 			}, 500);
 		})
 
@@ -63,17 +71,17 @@ $(document).ready(function(){
 			$("#redsHead").toggleClass("activeHead")
 			$("#whitesHead").removeClass("activeHead") 
 			$("html, body").animate({
-			    scrollTop: $("#wineHead").offset().top
+			    scrollTop: $("#specialsHead").offset().top
 			}, 500);
 		})
 
 		$("#cocktailHead").click(function(){
-			$("#beerSection, #wineSection").hide(500)
+			$("#specialsSection, #beerSection, #wineSection").hide(500)
 			$("#cocktailSection").slideToggle()
 			$("#cocktailHead").toggleClass("activeHead")
-			$("#wineHead, #beerHead, #whitesHead, #redsHead, #draftsHead, #bottlesHead").removeClass("activeHead") 
+			$("#specialsHead, #wineHead, #beerHead, #whitesHead, #redsHead, #draftsHead, #bottlesHead").removeClass("activeHead") 
 			$("html, body").animate({
-				scrollTop: $("#beerHead").offset().top
+				scrollTop: $("#specialsHead").offset().top
 				}, 500);
 
 		});

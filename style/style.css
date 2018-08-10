@@ -366,6 +366,7 @@ hr {
 	margin:0;
 	float: left;
 	padding: 0;
+	display: inline-block;
 }
 
 .specialsSubtitle {

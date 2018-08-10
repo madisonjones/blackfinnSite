@@ -361,3 +361,18 @@ hr {
   0%    { left: 0; }
   100%  { left: -200%; }
 }
+
+.menuLink {
+	margin:0;
+	float: left;
+}
+
+.specialsSubtitle {
+	position: relative;
+	left: 40%;
+	width: 20%;
+	border-bottom-color: white;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin-bottom: 6px;
+}

@@ -365,6 +365,7 @@ hr {
 .menuLink {
 	margin:0;
 	float: left;
+	padding: 0;
 }
 
 .specialsSubtitle {

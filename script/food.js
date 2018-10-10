@@ -72,5 +72,8 @@ $(document).ready(function(){
 			    scrollTop: $("#starterHead").offset().top
 			}, 500);
 		});
+
+
+		
 	});
 

@@ -81,7 +81,7 @@
 
 <div class="row container-fluid partiesRow">
 
-<div class="col-md-4" id="parties">
+<div class="col-md-4 pagination-centered" id="parties">
 	<div class="text-center" id="partiesHead">
 		BOOK YOUR PRIVATE PARTY
 	</div><hr>
@@ -94,7 +94,7 @@
 <script type='text/javascript'>var submitted=false;
 </script> 
 
-<iframe name='hidden_iframe' id='hidden_iframe' style='display:none;'' onload="if(submitted) {window.location='index.html';}"></iframe> 
+<iframe name='hidden_iframe' id='hidden_iframe' style='display:none;'' onload="if(submitted) {window.location='submit.html';}"></iframe> 
 
 		<form action="https://docs.google.com/forms/d/e/1FAIpQLSdLyvDRcJ0gsC2p2Igq9U4K8lq7BwJqi5DsJWcuNB8gj7R5kQ/formResponse" method='post' target='hidden_iframe' onsubmit='submitted=true';> 
 	  	<div class="form-group-sm">
@@ -128,13 +128,13 @@
 	        </div>
 	    </div>
 	    <br>
-	    <button type="submit" value="send" class="menuSubtitle btn btn-outline-light btn-block">SUBMIT</button>
+	    <button type="submit" value="send" id="submitButton" class="menuSubtitle btn btn-outline-light btn-block">SUBMIT</button>
 
 
 			</form>
 		</div> 
 
-			<div class="col-md-7 pagination-centered">
+			<div class="col-md-8 pagination-centered">
 				<div class="row gallCont" id="partyVenues">
 					<div class="col-md-12">
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">

@@ -15,7 +15,7 @@ body, html {
     background-size: cover;
 	padding-bottom: 20px;
 	padding-left: 0px;
-	padding-right: 10px;
+	padding-right: 0px;
 	opacity: 0
 }
 
@@ -129,7 +129,7 @@ body, html {
 
 #greeting {
 	position: relative;
-	top: 20vh;
+	top: 10vh;
 	width: 90%;
 	left: 5%;
 }
@@ -284,7 +284,6 @@ img {
 #partyVenues {
 	background-color: black;
 	padding: 2%;
-	margin: 10px;
 	border: 1px solid white;
 	color: white;
 	font-family: 'Merriweather', serif;
@@ -295,9 +294,8 @@ img {
 	background-color: black;
 	font-family: 'Merriweather', serif;
 	font-size: 12px;
-	padding: 10px;
 	border: 1px solid white;
-	margin: 10px;
+	margin-bottom: 10px;
 }
 
 #partiesHead {
@@ -324,9 +322,9 @@ button {
 	padding-bottom: 0;
 }
 
-.partiesRow {
+/*.partiesRow {
 	padding-left: 5%;
-}
+}*/
 
 .reserve {
 	font-size: 14px;
@@ -377,4 +375,38 @@ hr {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	margin-bottom: 6px;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+}
+
+#submitBackground {
+	background-color: black;
+	color: white;
+}
+
+.submitText {
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+}
+
+.submitBody {
+	position: absolute;
+	width: 40%;
+	left: 30%;
+	text-align: center;
+	top: 20%;
+}
+
+.googleTourDiv {
+	background-color: black;
+}
+
+#googleMap {
+	width: 75vw;
+	height: 50vh;
+	margin: 3vw;
 }

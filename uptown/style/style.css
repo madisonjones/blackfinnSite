@@ -423,3 +423,14 @@ hr {
 .btn-dark {
 	background-color: black;
 }
+
+.eventImg {
+	width: 60%;
+	padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	.eventImg {
+		width: 95%;
+	}
+}

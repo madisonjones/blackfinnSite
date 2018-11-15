@@ -3,13 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="icon" href="style/bflogo.png">
+	<link rel="icon" href="uptown/style/bflogo.png">
 
 	<title>Welcome to Blackfinn!</title>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 	<!--bootstrap 4-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<!--bootstrap 4-->
@@ -20,124 +22,46 @@
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
+		<link rel="stylesheet" href="uptown/style/style.css">
+		<link rel="stylesheet" href="style.css">
 
 
-		<link rel="stylesheet" href="style/style.css">
 
 		<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Merriweather" rel="stylesheet">
 				<!--stylesheets -->
 
-		<!--jquery -->
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-	  	<script src="script/home.js"></script>
+		<script src="index.js"></script>
 
 </head>
 <body>
-
 <div class="bg">
-<nav  id="homeNav" class="navbar navbar-expand-md md-light">
-  <a class="navbar-brand" href="#"><img src="style/bflogo.png" width="50" width="50"/></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon">    
-    	<i class="fa fa-navicon"></i>
-	</span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-    	<li class="nav-item">
-    	  <a class="nav-link active" href="#">Home</a>
-    	</li>
-      <li class="nav-item">
-        <a class="nav-link" id="foodLink" href="food.html">Food</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="drinks.html">Drinks</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="gallery.html">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="events.html">Upcoming Events</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="parties.html">Private Parties</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" href="https://www.instagram.com/blackfinnameripub/?hl=en"><i class="fab fa-instagram fa-lg"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" href="https://www.facebook.com/BlackFinnCharlotte/"><i class="fab fa-facebook-f fa-lg"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" href="https://twitter.com/blackfinnclt?lang=en"><i class="fab fa-twitter fa-lg"></i></a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<div id="homePage" class="container-fluid">
-	<div class="row text-center">
-		<div class="col-12 pagination-centered">
-			<div id="greeting" class="menuContainer">
-				<span class="title">Blackfinn Ameripub<br><br></span>
-          <div class="slideshow">
-             <div class="images">
-                <img id="mangoAvocadoImg" src="style/food/mangoavocado.jpg" style="max-height: 225px;">
-                <img id="tbirdImg" src="style/food/tbird.jpg" style="max-height: 225px;" >
-                <img id="brusselSproutsImg" src="style/food/brusselsprouts.jpg" style="max-height: 225px;">
-                <img id="steakImg" src="style/food/steak.jpg" style="max-height: 225px;">
-                <img id="steakImg" src="style/food/margfb.jpg" style="max-height: 225px;">
-                <img id="steakImg" src="style/food/sangria.jpg" style="max-height: 225px;">
-                <img id="steakImg" src="style/food/meatloafsliders.jpg" style="max-height: 225px;">
-                <img id="steakImg" src="style/food/wine.png" style="max-height: 225px;">
-                <img id="steakImg" src="style/food/tacotuesday.jpg" style="max-height: 225px;">
-             </div>
-          </div>
-
+<div id="greeting">
+	<div class="head">WELCOME TO BLACKFINN AMERIPUB OF CHARLOTTE<br></div>
+<div class="location">CHOOSE YOUR LOCATION</div>
+<div class="row">
+	<div class="col-md-6">
+		<div class="row link">
+			<a href="uptown/index.html">UPTOWN</a>
+		</div>
+		<div class="row">
+			<div class="map">
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="240" height="240" id="gmap_canvas" src="https://maps.google.com/maps?q=210%20east%20trade%20st%20charlotte%2C%20nc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{text-align:right;height:240px;width:240px;}.gmap_canvas {overflow:hidden;background:none!important;height:240px;width:240px;}</style></div><br>
 			</div>
 		</div>
 	</div>
+		<div class="col-md-6">
+			<div class="row link">
+				<a href="ballantyne/index.html">BALLANTYNE</a>
+			</div>
+			<div class="row">
+				<div class="map">
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="240" height="240" id="gmap_canvas" src="https://maps.google.com/maps?q=14825%20Ballantyne%20Village%20Way%2C%20Charlotte%2C%20NC%2028277&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{text-align:right;height:240px;width:240px;}.gmap_canvas {overflow:hidden;background:none!important;height:240px;width:240px;}</style></div><br>
+			</div>		
+			</div>
+		</div>
+
 </div>
-
-
-
-
-</div>	
-
-<footer class="page-footer">
-  <div class="row text-center">
-    <div class="col-md-4 pagination-centered">
-      <div class="footerHead">Address<br></div>
-      The EpiCentre <br>
-      210 E. Trade St. Suite 120-B <br>
-      Charlotte, NC 28202 <br>
-
-    </div>
-    <div class="col-md-4">
-      <div class="footerHead">Contact<br></div>
-      704.971.4440 <br>
-      info@blackfinnameripub.com<br>
-      <a class="socialMediaLink" target="_blank" href="https://www.instagram.com/blackfinnameripub/?hl=en"><i class="fab fa-instagram fa-lg"></i></a>    
-      <a class="socialMediaLink" target="_blank" href="https://www.facebook.com/BlackFinnCharlotte/"><i class="fab fa-facebook-f fa-lg"></i></a>    
-      <a class="socialMediaLink" target="_blank" href="https://twitter.com/blackfinnclt?lang=en"><i class="fab fa-twitter fa-lg"></i></a>
-
-    </div>
-    <div class="col-md-4">
-      <div class="footerHead">Hours<br></div>
-
-      Sunday-Wednesday: 11:00am-12:00am <br>
-      Thursday-Saturday: 11:00am-2:00am
-    </div>
-
-
-  </div>
-
-</footer>
-
-
+</div>
+</div>
 </body>
 </html>

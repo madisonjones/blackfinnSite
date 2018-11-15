@@ -1,0 +1,63 @@
+
+
+#greeting {
+	background-color: black;	
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	border: 1px solid white;
+	left: 10%;
+	width: 80%;
+	padding: 3%;
+
+}
+
+.head {
+	font-size: 40px;
+	font-family: 'Fredericka the Great', cursive;
+	padding-bottom: 20px;
+
+}
+
+.location {
+	padding-bottom: 10px;
+}
+.map {
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	position: relative;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+
+a:hover {
+	color: #911e17;
+
+}
+
+.mapouter {
+	width: 100%;
+	display: inline-block;
+}
+
+@media screen and (max-width: 414px) {
+    #greeting {
+    	font-size: 20px;
+    	width: 96%;
+    	left: 2%;
+    }
+    .head{
+    	font-size: 30px;
+    }
+    .bg {
+    	height: 170%;
+    }
+}
